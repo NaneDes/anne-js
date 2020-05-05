@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+#myForm {
+    font-family: 'Poiret One', cursive;
+    color: #E4E3E2;
+    background-color: #2D3F4D;
+    font-size: 1.2em;
+    border: #E4E3E2 solid 0.2em;
+    height: 96vh;
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.backHome {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+.backHome a {
+    text-decoration: none;
+    color: #E4E3E2;
+    font-size: 1.3em;
+}
+
+.backHome a:hover {
+    text-decoration: none;
+    color: #E4E3E2;
+}
+
+.title {
+    font-family: 'Monoton';
+    font-size: 1.7em;
+    margin-right: 1em;
+    margin-top: 1em;
+}
+
+.labelsAndInputs {
+    text-transform: uppercase;
+    margin-left: 7em;
+}
+
+.tooltippp {
+    text-transform: lowercase;
+}
+
+
+/* FOOTER */
+footer {
+    font-family: 'Poiret One', cursive;
+    color: #E4E3E2;
+    background-color: #121212;
+    height: 4vh;
+}
+
+footer p{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.7em;
+    padding-top: 0.5em;
+}
+
+
+
+/* MAX 800 */
+@media screen and (max-width: 800px) {
+    .home {
+        display: flex;
+        flex-direction: column;
+    }
+    .backHome {
+        align-items: flex-start;
+    }
+    .backHome a {
+        font-size: 0.7em;
+    }
+    .title {
+        margin-right: 0;
+        margin-top: 0;
+        text-align: center;
+    }
+    .labelsAndInputs {
+        margin-left: 2em;
+    }
+}
+
+/* MAX 500 */
+@media screen and (max-width: 500px) {
+    .title {
+        font-size: 1.3em;
+    }
+}

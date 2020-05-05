@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style_formulaire.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Contact</title>
+  </head>
+  <body>
+
+
+    <form id="myForm">
+      
+      <div class="home">
+        <div class="backHome">
+        <a href="./index.html"><img src="images/étoile E4E3E2.png" alt="Etoile"></a>
+        <p><a href="./index.html">Home</a></p>
+      </div>
+        <h1 class="title">Modern Choreographers</h1>
+      </div>
+
+      <div class="labelsAndInputs">
+        <!-- NOM: INPUT TYPE=TEXT -->
+        <label for="lastName" class="form_col">NOM :</label>
+        <br />
+        <input type="text" name="lastName" id="lastName" min="2" size="30"/>
+        <span class="tooltippp">(2 caractères minimum)</span>
+        <br /><br />
+        
+        <!-- PRENOM: INPUT TYPE=TEXT -->
+        <label for="firstName" class="form_col">PRENOM :</label>
+        <br />
+        <input type="text" name="firstName" id="firstName" min="2" size="30"/>
+        <span class="tooltippp">(2 caractères minimum)</span>
+        <br /><br />
+  
+        <!-- PSEUDO: INPUT TYPE=TEXT -->
+        <label for="login" class="form_col">EMAIL :</label>
+        <br />
+        <input type="text" name="login" id="login" min="4" size="30"/>
+        <span class="tooltippp">(4 caractères ou +)</span>
+        <br /><br />
+  
+        <!-- COUNTRY: INPUT TYPE=DROPDOWN LIST -->
+        <label for="country" class="form_col">PAYS :</label>
+        <br />
+        <select name="country" id="country">
+            <option value="none">Pays de résidence</option>
+            <option value="fr">France</option>
+            <option value="en">UK</option>
+            <option value="">Belgique</option>
+            <option value="">Pays-Bas</option>
+            <option value="">Luxembourg</option>
+            <option value="">Allemagne</option>
+            <option value="">Suisse</option>
+            <option value="us">USA</option>
+            <option value="">Autre</option>
+        </select>
+        <span class="tooltippp">Sélectionnez votre pays de résidence</span>
+        <br /><br />
+  
+        <!-- NEWSLETTER INPUT TYPE=CHECKBOX-->
+        <span class="form_col"></span>
+        <label for="more">Je souhaite recevoir la newsletter</label>
+        <input type="checkbox" name="news" id="more"/>
+        <br />
+
+        <!-- SUBMIT INPUT TYPE=SUBMIT-->
+        <span class="form_col"></span>
+        <input type="submit" value="Envoyer"/>
+        <br /><br />
+
+      </div>
+
+    </form>
+    <footer>
+      <p>&copy;2020 Anne Desopper - Modern Choreographers</p>
+    </footer>
+
+    <script src="./scripts/formulaire.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

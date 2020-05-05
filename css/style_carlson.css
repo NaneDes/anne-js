@@ -1,0 +1,250 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poiret One', cursive;
+    color: #E4E3E2;
+    border-left: #E4E3E2 1px solid;
+}
+
+a {
+    text-decoration: none;
+    color: #E4E3E2;
+}
+
+.context {
+    height: 96vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+}
+
+#carlsonPage {
+    height: 96vh;
+    width: 50%;
+    background-color: #0E0A07;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #E4E3E2;
+}
+#carlsonTextes {
+    height: 96vh;
+    width: 50%;
+    background-color: #88857E;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+/* 3 PARTIES DROITE #carlsonPage*/
+#carlsonPage .carlsonHaut,
+#carlsonPage .carlsonMilieu,
+#carlsonPage .carlsonBas {
+    height: 32vh;
+}
+.carlsonHaut {
+    display: flex;
+    text-align: end;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-image: url('../images/carlsonpage3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.carlsonMilieu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #121212;
+    background-color: #E4E3E2;
+}
+
+.carlsonBas {
+    display: flex;
+    align-items: center;
+    background-image: url('../images/carlsonpage1.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+/* H2-HOME & P-HOME */
+.carlsonHaut .carlsonStar1 p,
+.carlsonToLink,
+.carlsonMilieu h2 {
+    font-size: 1.3em;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+.carlsonToLink {
+    margin-bottom: -0.7em;
+}
+
+/* HAUT */
+.carlsonHaut .carlsonStar1 {
+    margin-right: 3em;
+    margin-top: 3em;
+}
+.imageMouse {
+    display: none;
+    height: 32vh;
+}
+
+/* MILIEU */
+.name {
+    text-align: center;
+    margin-top: 2em;
+}
+.carlsonMilieu p {
+    font-size: 1.3em;
+    text-align: center;
+    margin-left: 4em;
+    margin-right: 4em;
+}
+.carlsonMilieu p:hover {
+    font-size: larger;
+}
+
+/* BAS */
+.carlsonBas .carlsonStar2 {
+    margin-left: 3em;
+    margin-top: 3em;
+    text-align: center;
+    cursor: pointer;
+}
+.carlsonBas .carlsonStar2:hover {
+    font-size: large;
+}
+/* PARTIE TEXTES #carlsonTextes */
+#carlsonTextes h2 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-top: 3em;
+    margin-left: 2em;
+}
+#carlsonTextes p {
+    font-size: 1.1em;
+    margin-top: 2em;
+    margin-left: 4em;
+    margin-right: 3em;
+}
+#bio .biog {
+    font-size: 1.4em;
+}
+#hiddenText {
+    display: none;
+    color: #E4E3E2;
+    background-color: #121212;
+    border: solid 1px #88857E;
+    height: 96vh;
+}
+#view-button {
+    color: #121212;
+    background-color: #E4E3E2;
+  }
+#close-button{
+    color: #E4E3E2;
+    background-color: #88857E;
+}
+.bouton {
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-family: 'Poiret One', cursive;
+    letter-spacing: 0.3em;
+    margin-top: 1.5em;
+    text-align: center;
+    margin-left: 3.5em;
+    margin-right: 2.5em;
+}
+
+/* FOOTER */
+footer {
+    border-top: solid 1px #E4E3E2;
+    background-color: #121212;
+    height: 4vh;
+}
+
+footer p{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.7em;
+}
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1500px) {
+    .carlsonHaut .carlsonStar1 {
+        margin-right: 1em;
+        margin-top: 1em;
+    }
+    .carlsonMilieu p {
+        margin-right: 0.5em;
+        margin-left: 0.5em;
+    }
+    .carlsonBas .carlsonStar2 {
+        margin-left: 1em;
+    }
+    .carlsonBas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #carlsonTextes h2 {
+        font-size: 1.3em;
+        margin-top: 1em;
+    }
+    #carlsonTextes p {
+        font-size: 1em;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+    #bio .biog {
+        font-size: 1.3em;
+    }
+    .bouton {
+        font-size: 1.3em;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .carlsonMilieu p {
+        font-size: 0.9em;
+    }
+    #bio .biog {
+        font-size: 1.2em;
+    }
+    .bouton {
+        letter-spacing: 0;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .context {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    #carlsonPage {
+        width: 100%;
+    }
+    #carlsonTextes {
+        width: 100%;
+        height: auto;
+    }
+    #hiddenText {
+        width: 100%;
+        height: auto;
+    }
+    .bouton {
+        margin-bottom: 1em;
+    }
+}

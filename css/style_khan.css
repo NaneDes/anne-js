@@ -1,0 +1,286 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poiret One', cursive;
+    color: #E4E3E2;
+    border-left: #E4E3E2 1px solid;
+}
+
+a {
+    text-decoration: none;
+    color: #E4E3E2;
+}
+
+.context {
+    height: 96vh;
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+}
+
+#khanPage {
+    height: 96vh;
+    width: 42%;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #E4E3E2;
+}
+#khanTextes {
+    height: 96vh;
+    width: 58%;
+    background-color: #2D3F4D;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+/* 3 PARTIES GAUCHE #khanPage*/
+#khanPage .khanHaut,
+#khanPage .khanMilieu,
+#khanPage .khanBas {
+    height: 32vh;
+}
+.khanHaut {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.khanMilieu {
+    display: flex;
+    align-items: center;
+    background-color: #E4E3E2;
+}
+.khanBas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* H2-HOME & P-HOME */
+.khanHaut p,
+.khanToLink {
+    font-size: 1.3em;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+.khanToLink {
+    margin-bottom: -0.7em;
+}
+
+/* HAUT */
+.khanHaut .khanStar1 {
+    margin-left: 3em;
+    margin-top: 3em;
+}
+
+.white {
+    height: 32vh;
+    width: 50%;
+}
+
+.blue {
+    display: none;
+    height: 32vh;
+    width: 50%;
+}
+/* MILIEU */
+.khanMilieu p {
+    font-size: 1em;
+    margin: 1em;
+    color: #121212;
+}
+.giselle {
+    width: 50%;
+    height: 30vh;
+}
+
+/* BAS */
+.khanBas .khanStar2 {
+    margin-left: 3em;
+    text-align: center;
+    cursor: pointer;
+}
+.rouge {
+    height: 29.5vh;
+    margin-right: 1em;
+}
+
+
+/* PARTIE TEXTES #khanTextes */
+#khanTextes h2 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-top: 3em;
+    margin-left: 7em;
+}
+#khanTextes p {
+    font-size: 1.3em;
+    margin-right: 2.5em;
+    margin-left: 10em;
+    margin-top: 2em;
+}
+
+#hiddenText {
+    display: none;
+    color: #2D3F4D;
+    background-color: #E4E3E2;
+    border: solid 1px #2D3F4D;
+    height: 96vh;
+}
+#view-button {
+    color: #2D3F4D;
+    background-color: #E4E3E2;
+  }
+#close-button{
+    color: #E4E3E2;
+    background-color: #2D3F4D;
+}
+.bouton {
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-family: 'Poiret One', cursive;
+    letter-spacing: 0.3em;
+    margin-top: 1em;
+    text-align: center;
+    margin-left: 8.5em;
+    margin-right: 2em;
+}
+
+/* FOOTER */
+footer {
+    border-top: solid 1px #E4E3E2;
+    background-color: #121212;
+    height: 4vh;
+}
+
+footer p{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.7em;
+}
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1400px) {
+    .khanHaut .khanStar1 {
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    .khanMilieu p {
+        margin: 0.5em;
+    }
+    .khanBas .khanStar2 {
+        margin-left: 0;
+    }
+    .rouge {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    #khanTextes h2 {
+        font-size: 1.3em;
+        margin-top: 1em;
+    }
+    #khanTextes p {
+        font-size: 1.2em;
+        margin-left: 8em;
+        margin-right: 2em;
+    }
+    .bouton {
+        font-size: 1.3em;
+        margin-left: 7em;
+    }
+    .rouge,
+    .giselle {
+        height: 27vh;
+    }
+}
+
+
+@media screen and (max-width: 1100px) {
+    .khanMilieu p {
+        font-size: 0.9em;
+    }
+    #khanTextes p {
+        font-size: 1.1em;
+    }
+    .bouton {
+        letter-spacing: 0;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .white,
+    .blue {
+        width: 70%;
+    }
+    .khanMilieu p {
+        display: none;
+    }
+    .giselle {
+        width: 100%;
+    }
+    .khanBas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .rouge {
+        height: 20vh;
+    }
+    #khanTextes p {
+        margin-left: 4em;
+    }
+    .bouton {
+        margin-left: 3em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .context {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    #khanPage {
+        width: 100%;
+    }
+    #khanTextes {
+        width: 100%;
+        height: auto;
+    }
+    #hiddenText {
+        width: 100%;
+        height: auto;
+    }
+    #khanTextes p {
+        margin-top: 0.5em;
+    }
+    .khanBas {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .bouton {
+        margin-bottom: 1em;
+    }
+    #khanTextes h2 {
+        margin-left: 2em;
+    }
+    .giselle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        margin-left: 5em;
+        margin-right: 5em;
+    }
+}
